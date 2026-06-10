@@ -311,10 +311,12 @@ padding: 100px 40px;
 .grid-cards{
   grid-template-columns: 1fr;
   width: 350px;
+  margin: 0;
 }
 .grid-quadro{
   grid-template-columns: 1fr;
   width: 350px;
+  margin: 0;
 }
 
 .container-foto {
