@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+/*
+Cores para o Site:
+azul escuro #779ECC 
+azul claro #9FC0DE 
+parece meio rosa #F2C894  
+meio laranja #FFB347  
+Cores para Sombra: 
+azul claro #E2FAFC 
+azul mais claro quase branco #F8FCFF  parece com branco #FEFEFE  
+amarelo bem clarinho #FDFCF6 
+laranja bem clarinho  #FEF6F1
+
+*/
+
+:root{
+  --cor0: #ffff;
+  --cor1:#779ECC;
+  --cor2: #9FC0DE;
+  --cor3: #F2C894;
+--cor4: #FFB347;
+--cor5: #FF985A;
+--fonte-padrao: "Open Sans", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+          
+            background-color: white ;
+            color: black;
+            font-family: var(--fonte-padrao);
+            line-height: 1.5em;
+            }
+        
+        
+        header{
+          background-color:white;
+           padding-top: 40px;
+   
+    color: rgb(90, 89, 89);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    gap: 10px;
+  }
+
+  
+  #menu ol{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+ 
+  }
+
+  #menu li{
+    margin-left: 10px;
+  }
+
+   #menu a{
+  
+    text-decoration: none;
+    color:rgb(90, 89, 89);
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+   }
+ #menu a:hover{
+    background-color:#F2C894;
+    color: var(--cor5);
+  }
+
+main{
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 100px;
+  margin-top: 20px;
+  
+}
+
+
+
+.apresentação{
+ 
+padding: 280px;
+border-radius: 5px;
+background-image: url("fotosdosite/nandapernacruzadateste.png");
+background-repeat: no-repeat;
+background-position:left bottom;
+background-size: auto;
+background-color: #FEF6F1;
+}
+
+
+
+.apresentação a{
+text-decoration: none;
+    color:rgb(90, 89, 89);
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 2px;
+    transition-duration: 0.5s;
+    background-color: white;
+}
+
+
+
+
+.profissional{
+background-color:#1c3a58;
+color:white;
+margin: 10px;
+background-image:url("fotosdosite/livrosnamao.png") ;
+background-size: contain;
+background-position: right bottom;
+background-repeat: no-repeat;
+line-height: 1.5em;
+background-attachment: scroll;
+height: 90vh;
+padding: 250px;
+
+}
+
+.aprofissional{
+  text-align: left;
+}
+
+.profissional a{
+  text-decoration: none;
+    color:rgb(90, 89, 89);
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 2px;
+    transition-duration: 0.5s;
+    background-color: white;
+}
+
+
+.sintomas{
+background-color:white;
+text-align: center;
+color:#1c3a58;
+padding: 100px;
+
+}
+ .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; 
+    max-width: 30px;
+    margin: 0 auto;
+   
+  }
+  .card {
+    border: 1px solid #FFB347;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color:white;
+  }
+  .card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+    stroke: #1c3a58; /*linha em volta azul escuro */
+    fill: none;
+  }
+
+.comofunciona{
+  background-color:white;
+  text-align: center;
+  color: #1c3a58;
+  padding: 100px;
+}
+.grid-quadro {
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; 
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .quadro {
+    background-color: white;
+    border: 1px solid #9FC0DE; 
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    color: #1c3a58;
+}
+
+
+  .footer {
+ 
+  text-align: center;
+  background: #eee;
+}
+
+
+        
+        
+
