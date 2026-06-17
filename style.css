@@ -104,14 +104,16 @@ h2{
   line-height: 2em;
 }
 
-.apresentacao{
+#apresentacao{
 display: flex;
 background-color: #FEF6F1;
 justify-content: center;
-gap: 40px;    
+padding-top: 50px;   
 align-items: center;  
-padding-top: 120px;
+}
 
+#fotoapresentacao{
+  padding-top: 100px;
 }
 
 #aapresentacao {
@@ -124,13 +126,14 @@ line-height: 1.5em;
 
 
 #aapresentacao p{
-  max-width: 700px;
+  max-width: 900px;
   margin: auto;
+  
 }
 
 
 
-.apresentacao a{
+#apresentacao a{
 text-decoration: none;
 
     color: rgb(41, 40, 40);
@@ -149,7 +152,7 @@ text-decoration: none;
 }
 
 
-.profissional{
+#profissional{
   display: flex;
 background-color:#1c3a58;
 color:white;
@@ -157,21 +160,23 @@ line-height: 1.5em;
 justify-content: center;
 gap: 40px;
 align-items: center;
-padding-top: 120px;
-padding-left: 50px;
+
 }
 
+#aprofissional{
+padding: 100px 10px;
+}
 
 
 #aprofissional p{
  max-width: 700px;
-padding: 5px;
-padding-bottom: 20px;
+
+
 }
 
 #fotodaprofissional{
   align-self: flex-end;
-  margin: 0;
+  padding-top: 100px;
 }
 
 #aprofissional a{
@@ -189,18 +194,18 @@ padding-bottom: 20px;
 }
 
 .container-foto{
-    max-width: 900px;
-    width: 100%;
+    max-width: 500px;
+    width: 80%;
     height: auto;
     display: block;
     flex-shrink: 0;
     }
 
-.sintomas{
+#sintomas{
 background-color: white;
 text-align: center;
 color:#1c3a58;
-padding: 100px 40px;
+padding: 50px;
 
 }
 .segundoparagrafo{
@@ -209,126 +214,166 @@ padding: 100px 40px;
  .grid-cards {
     display: grid;
     color: #1c3a58;
-    justify-content: center;
-    gap: 50px; 
-    margin: auto;
+   justify-items: center;
+    gap: 30px; 
+    padding: 90px;
    grid-template-columns: repeat(3, 1fr);
-   width: 900px;
+  justify-content: center;
+   align-items: end;
   }
   .card {
-    border: 1px solid var(--cor5);
-    border-radius: 50px;
-    padding-top: 50px;
-    align-content: center;
+    border: 3px solid var(--cor5);
+    border-radius: 90px;
+   padding: 30px;
+    max-width: 400px;
     background-color:#fdfcf6cd;
     text-align: center;
+  padding-bottom: 0px;
+  }
   
-  }
-  .card img {
-    
-    width: 64px;
-    height: 64px;
-    stroke:var(--cor5); /*linha em volta azul escuro */
-    fill: none;
-  }
 
-.comofunciona{
+#comofunciona{
   background-color:#fdfcf6cd;
   text-align: center;
-  padding: 50px;
+  padding: 100px;
   color: #1c3a58;
 }
 
+#informacoes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+justify-items: center;
+ text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.lista{
+ 
+ text-align: center;
+ color:#1c3a58;
+padding: 20px;
+}
+  
+#informacoes p{
+   max-width: 700px;
+padding: 5px;
+padding-bottom: 20px;
+color: #f26812;
 
+}
 
-.comofunciona h1{
-  padding-bottom: 100px;
+#ambiente{
+  text-align: center;
+  color: #05322f;
+  background-color: white;
+  padding: 100px;
 }
 
 .grid-quadro {
   
     display: grid;
-    grid-template-columns: 1fr 1fr;
-   gap: 80px;
- position: relative;
-  max-width: 900px;
-  margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+   gap: 150px;
+  justify-content: center;
+ padding-top: 100px;
   }
-  .quadro-esquerda {
-  border: 5px solid var(--cor5); 
-    border-radius: 100px;
-    padding: 40px;
+  .quadro h3{
+    padding-bottom: 30px;
+    padding-top: 90px;
     text-align: center;
-    color: #1c3a58;
-     align-content: center;
-     height: 260px;
+  
+  }
+  .quadro {
+  border: 4px solid var(--cor5); 
+    border-radius: 300px;
     text-align: center;
+    color:  #05322f;
+    padding: 10px;
+
     
 }
 
-.quadro-direita {
-  border: 5px solid var(--cor5); 
-    border-radius: 100px;
-    padding: 40px;
-    text-align: center;
-    color: #1c3a58;
-     align-content: center;
-     height: 240px;
-     margin-top: 100px;
-     
+#asduvidas{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color:  #05322f;
+  text-align: center;
+  padding: 200px;
+  color: white;
 }
+
+ .duvidas{
+display: flex;
+  flex-direction: column;
+  gap: 15px;
+   padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-color 0.5s, border-width 0.5s;
+  background-color: #FEF6F1;
+  color: black;
+ }    
+ .duvidas :hover{
+  border-color: var(--destaque);
+  border-left-width: 15px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px){
   
-.apresentacao{
+#apresentacao{
   flex-direction: column-reverse;
   text-align: center;
-
-}
-#aapresentacao{
-  margin-left: auto;
+padding-top: 100px;
 }
 
 
-.profissional{
+#profissional{
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  
+
 }
+
+
 
 #fotodaprofissional{
   align-self: center;
+ 
 }
   
-#aprofissional{
-  margin: auto;
-}
+
 
 .comofunciona{
     padding: 40px 15px;
   }
 
 .grid-cards{
-  grid-template-columns: 1fr;
-  width: 400px;
-  margin: 0;
-}
-.grid-quadro{
-  grid-template-columns: 1fr;
-  width: 400px;
-  margin: 0;
+  grid-template-columns: 1fr 1fr;
+padding: 20px;
 }
 
-.container-foto {
-  width: 100%;
-  max-width: 300px;
-  margin: auto;
-  display: block;
-  
+
+.grid-quadro{
+  grid-template-columns: 1fr;
+
 }
-.quadro-direita{
-  margin: 0;
+
+.quadro{
+  padding: 50px;
+
 }
+
+#informacoes {
+ grid-template-columns: 1fr;
+}
+#informacoes p{
+   width:500px;
+}
+
+
 }
 
 
