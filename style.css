@@ -233,33 +233,40 @@ padding: 50px;
   
 
 #comofunciona{
-  background-color:#fdfcf6cd;
+  background-color:var(--cor3);
   text-align: center;
-  padding: 100px;
   color: #1c3a58;
+  background-image: url('fotosdosite/fotocomotablet.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px;
+  
 }
 
 #informacoes{
   display: grid;
+  color: #1c3a58;
   grid-template-columns: 1fr 1fr;
-  padding: 50px;
-justify-items: center;
+  padding: 90px;
+justify-items: end;
  text-align: center;
   align-items: center;
   justify-content: center;
   margin: auto;
+  gap: 40px;
+  
 }
 .lista{
  
  text-align: center;
  color:#1c3a58;
-padding: 20px;
+background-color: #fef6f1ae;
+border-radius: 90px;
+padding: 30px;
 }
   
 #informacoes p{
    max-width: 700px;
-padding: 5px;
-padding-bottom: 20px;
 color: #f26812;
 
 }
