@@ -17,7 +17,13 @@ amarelo bem clarinho #FDFCF6
 laranja bem clarinho  #FEF6F1
 
 */
-
+/*
+ <div class="depoimento-wrapper">
+         <h3>Luísa R</h3>
+          <p class="cargo">Programadora</p>
+          <p class="texto-depoimento"><strong>Melhor tratamento psicológico que já recebi. </strong>Me sinto muito acolhida, compreendida e sinto que há uma empatia e preocupação quando falo dos meus problemas.</p>
+      </div>
+*/
 :root{
   --cor0: #ffff;
   --cor1:#779ECC;
@@ -246,7 +252,7 @@ color:#1c3a58;
   display: grid;
   color: #1c3a58;
   grid-template-columns: 1fr 1fr;
-  padding: 50px 20PX;
+  padding: 50px 20px;
   text-align: center;
  align-items: start;
   justify-content: center;
@@ -304,6 +310,75 @@ font-weight: bold ;
 
     
 }
+
+#depoimentos{
+  padding: 60px 20px;
+  text-align: center;
+ color: white;
+ font-weight: 600; 
+}
+
+#depoimentos h1{
+color: var(--cor5);
+}
+#depoimentos h3{
+ font-weight: 600; 
+
+line-height: 1.5e;
+padding-bottom: 10px;
+}
+.depoimentoscontainer{
+  display: flex;
+ padding: 40px;
+ align-items: center;
+  justify-content: center;
+ position: relative;
+  max-width: 600px;
+  margin: auto;
+  background-color:var(--cor1);
+  border: 5px solid white;
+  border-radius: 30px;
+}
+.seta {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: var(--cor5);
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s;
+  position:absolute;
+}
+.seta:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+.seta-esquerda {
+  left: 20px; 
+}
+
+.seta-direita {
+  right: 20px; 
+}
+.depoimento-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 20px;
+   
+}
+
+.aspas {
+  position: absolute;
+  font-size: 90px;
+  color:var(--cor5);
+  font-family: Georgia, serif;
+  line-height: 1;
+  opacity: 0.8;
+}
+.aspas-esq { top: 10px; left: 30px; }
+.aspas-dir { top: 10px; right: 30px; }
+
+
 
 #asduvidas{
   display: flex;
