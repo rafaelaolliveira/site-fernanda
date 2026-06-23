@@ -324,7 +324,10 @@ font-weight: bold ;
 }
 
 #depoimentos h1{
-color: var(--cor5);
+color:#f26812d8;
+font-weight: bolder;
+
+
 }
 #depoimentos h3{
  font-weight: 600; 
