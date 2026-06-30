@@ -139,11 +139,11 @@ line-height: 1.5em;
 
 
 #aapresentacao p{
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
-  
+  font-size: 1.1rem;
+  line-height: 1.5em;
 }
-
 
 
 #apresentacao a{
@@ -178,6 +178,8 @@ padding: 20px 30px;
  max-width: 900px;
 padding-left: 30px;
 margin: auto;
+font-size: 1.1rem;
+  line-height: 1.5em;
 }
 
 
