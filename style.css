@@ -333,8 +333,8 @@ font-weight: bold ;
 
 #depoimentos h1{
 color:#f26812d8;
-font-weight: bolder;
 
+line-height: 2.5em;
 
 }
 #depoimentos h3{
@@ -435,7 +435,7 @@ line-height: 2em;
 }
 
 #artigos{
-min-height: 600px;
+min-height: 500px;
   padding: 30px 20px;
  
 }
@@ -452,8 +452,8 @@ min-height: 600px;
 
 .artigo {
   position: relative; 
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 380px;
   border-radius: 20px;
   overflow: hidden; 
   box-shadow: 0 4px 15px rgba(107, 86, 86, 0.15);
@@ -524,6 +524,49 @@ min-height: 600px;
 .bto:hover {
   background-color: #FF985A;
 }
+
+#agende{
+
+padding: 30px;
+color:#1c3a58;
+}
+#agende h2, p{
+  text-align: center;
+  padding-bottom: 10px;
+}
+#agende a{
+  text-decoration: none;
+
+    color:#1c3a58;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    background-color:#ff995ad0;
+    display: inline-block;
+    
+}
+
+.grid-agende {
+    display: grid;
+    
+   justify-items: center;
+     
+    padding: 50px 20px;
+   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+   
+  }
+  .quadro-agende {
+    
+    padding: 20px;
+    max-width: 350px;
+     border: 2px solid #ff995ad0; 
+    border-radius: 30px;
+    text-align: center;
+  
+  }
+  
 
 
 @media screen and (max-width: 768px){
@@ -694,6 +737,16 @@ li{
 .seta:hover {
     transform: translateY(-50%) scale(1.1);
   }
+.artigo{
+  height: 330px;
+  width: 330px;
+}
+.grid-agende{
+  grid-template-columns: 1fr;
+  padding: 20px;
+  gap: 50px;
+  padding-top: 60px;
+}
 
 
 
