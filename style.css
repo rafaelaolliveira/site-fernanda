@@ -99,7 +99,7 @@ main{
   background-color: white;
   display: flex;
   flex-direction: column;
-gap: 50px;
+  gap: 30px;
 
  
 }
@@ -244,7 +244,7 @@ color:#1c3a58;
     border-radius: 40px;
     padding: 20px;
     max-width: 350px;
-    background-color:#fdfcf6cd;
+    
     text-align: center;
   
   }
@@ -445,7 +445,7 @@ min-height: 500px;
   display:flex;
   flex-direction: row;
  justify-content:center;
- gap: 150px;
+ gap: 100px;
    
 }
 
@@ -551,7 +551,7 @@ color:#1c3a58;
     display: grid;
     
    justify-items: center;
-     
+     gap: 20px;
     padding: 50px 20px;
    grid-template-columns: repeat(3, 1fr);
   justify-content: center;
