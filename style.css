@@ -109,8 +109,9 @@ gap: 50px;
 .titulo{
   line-height: 1.1em;
   padding-bottom: 50px;
-  
+  text-align: center;
 }
+
 h2{
   line-height: 2em;
 }
@@ -433,6 +434,97 @@ color: black;
 line-height: 2em;
 }
 
+#artigos{
+min-height: 600px;
+  padding: 30px 20px;
+ 
+}
+
+
+#artigo{
+  display:flex;
+  flex-direction: row;
+ justify-content:center;
+ gap: 150px;
+   
+}
+
+
+.artigo {
+  position: relative; 
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(107, 86, 86, 0.15);
+
+}
+
+
+.artigo .foto {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease; 
+}
+
+
+.artigo-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(22, 21, 19, 0.711); 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center; 
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+
+.artigo:hover .artigo-info {
+  opacity: 1;
+}
+
+.artigo:hover .foto {
+  transform: scale(1.08);
+}
+
+
+.descricao summary {
+  color:white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  
+  margin-bottom: 10px;
+  
+}
+
+.descricao p {
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.bto {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #FF985A;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.bto:hover {
+  background-color: #FF985A;
+}
+
 
 @media screen and (max-width: 768px){
 
@@ -510,7 +602,14 @@ li{
   flex-direction: column;
   }
 
-
+#artigo{
+  display:flex;
+  flex-direction: column;
+ justify-content: center;
+ gap: 50px;
+ margin-left: 50px;
+   
+}
 
 #fotodaprofissional {
     align-self:center;
@@ -522,7 +621,7 @@ li{
  margin: 0;
 }
   
-#ambiente, #asduvidas, #aprofissional, #aapresentacao {
+#ambiente, #asduvidas, #aprofissional, #aapresentacao, #artigos {
     padding: 50px 20px;
   }
 
