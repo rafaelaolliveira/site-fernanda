@@ -17,13 +17,7 @@ amarelo bem clarinho #FDFCF6
 laranja bem clarinho  #FEF6F1
 
 */
-/*
- <div class="depoimento-wrapper">
-         <h3>Luísa R</h3>
-          <p class="cargo">Programadora</p>
-          <p class="texto-depoimento"><strong>Melhor tratamento psicológico que já recebi. </strong>Me sinto muito acolhida, compreendida e sinto que há uma empatia e preocupação quando falo dos meus problemas.</p>
-      </div>
-*/
+
 :root{
   --cor0: #ffff;
   --cor1:#779ECC;
@@ -277,6 +271,12 @@ li{
  .menu a:hover{
     background-color:#F2C894;
     color: var(--cor5);
+  }
+
+.titulo {
+    font-size: 1.875rem; 
+    line-height: 1;
+    
   }
 
 #primeiro{
