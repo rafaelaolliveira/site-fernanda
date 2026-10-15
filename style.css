@@ -616,7 +616,8 @@ color:#1c3a58;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+ position: relative;
+ width: 100%;
 }
 
 .btn {
@@ -630,16 +631,18 @@ font-weight: 600;
  }
 
  .logo{
-  width: 300px;
+ max-width: 200px;
+  width: 100%;
  }
 
  .menu ol{
 display: none;
 list-style: none;
+position: absolute;
 flex-direction: column;
 gap: 0.5rem;
 width: 100%;
-top: 90px;
+top: 50%;
 padding: 1rem;
 left: 0;
 background-color: white;
@@ -689,10 +692,16 @@ li{
 #artigo{
   display:flex;
   flex-direction: column;
- justify-content: center;
- gap: 50px;
- margin-left: 50px;
-   
+ align-items: center;
+ gap: 30px;
+ margin-left: 0px;
+ width: 100%;
+}
+
+.artigo{
+  height: 330px;
+  width: 100%;
+  max-width: 320px;
 }
 
 #fotodaprofissional {
@@ -701,26 +710,27 @@ li{
   }
 
 .container-foto{
-  width: 80%;
- margin: 0;
+  width: 100%;
+ margin: 0 auto;
+ max-width: 300px;
 }
   
 #ambiente, #asduvidas, #aprofissional, #aapresentacao, #artigos {
-    padding: 50px 20px;
+    padding: 40px 15px;
   }
 
 
 
 .grid-cards{
   grid-template-columns: 1fr;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 
 .grid-quadro{
   grid-template-columns: 1fr;
   gap: 30px;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .quadro{
