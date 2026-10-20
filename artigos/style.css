@@ -91,11 +91,18 @@ visibility: hidden;
   }
 
 main{
-  background-color:#c4d1dd9e;
+  
   display: flex;
   flex-direction: column;
-padding: 100px;
+  gap: 30px;
 
+}
+article {
+  max-width: 900px;         
+  margin: 40px auto;       
+  padding: 50px;           
+  border-radius: 20px;     
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
 }
 
 .assunto{
@@ -113,50 +120,178 @@ padding: 100px;
   flex: 1;
 text-align: center;
 line-height: 1.5em;
- max-width: 980px;
+ 
 }
 
 .titulo{
   line-height: 1.1em;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   text-align: center;
   color:black;
+  max-width: 800px;
   
 }
 .maior{
   line-height: 1.1em;
-  padding-top: 50px;
-  
+  padding-top: 20px;
   color:black;
+ padding-bottom: 30px;
+ 
  
 }
   h3{
   line-height: 1.1em;
   line-height: 2em;
   padding-top: 30px;
-  color: black;
+  color:#e1732f;
   padding-bottom: 10px;
+  font-weight: bold;
+  
 }
 .info{
 
   padding: 30px;
 
 }
+
+.distancia{
+  padding-bottom: 20px;
+}
 .info p{
-  background-color: white;
+  
   border-radius: 20px;
   padding: 15px;
+  
 }
 
-#primeiro{
-  width: 20%;
+.foto{
+  width: 50%;
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 20px;
  margin: auto;
+ 
+ 
+}
+
+
+.sobre-mim-card{
+  display: flex;
+background-color:#1c3a58;
+color:white;
+line-height: 1.5em;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+.sobre-mim-card h1{
+  color: white;
+}
+
+.lista-topicos p {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+
+.container-foto{
+    
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-shrink: 0;
+    }
+
+#fotodaprofissional{
+ align-self: flex-end;
+ 
+ }
+
+#aprofissional a{
+  text-decoration: none;
+  text-align: center;
+    color:black;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    background-color: var(--cor3);
+    display: inline-block;
+    
+}
+
+#link{
+  padding: 20px;
   
 }
 
+.lista-topicos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.lista-topicos li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: white;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6; 
+  
+}
+
+#agende{
+
+padding: 30px;
+color:#1c3a58;
+}
+#agende h2, p{
+  text-align: center;
+  padding-bottom: 10px;
+}
+#agende a{
+  text-decoration: none;
+
+    color:#1c3a58;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    background-color:#ff995ad0;
+    display: inline-block;
+    
+}
+
+.grid-agende {
+    display: grid;
+    
+   justify-items: center;
+     gap: 20px;
+    padding: 50px 20px;
+   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+   
+  }
+  .quadro-agende {
+    
+    padding: 20px;
+    max-width: 350px;
+     border: 2px solid #ff995ad0; 
+    border-radius: 30px;
+    text-align: center;
+  
+  }
+  
 
 .footer-barra {
   background-color: var(--cor5); 
@@ -200,7 +335,15 @@ line-height: 1.5em;
 }
 
       
-
+.gatilho-clique {
+   
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .gatilho-clique:hover {
+    color: #FF985A;
+  }
 
 
 
@@ -279,13 +422,58 @@ li{
     
   }
 
-#primeiro{
-  width: 90%;
-  
-  
+section {
+   margin: 20px 15px;
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+
+.sobre-mim-card {
+  display: flex;
+  flex-direction: column;
+  }
+
+#fotodaprofissional{
+  display: block;       
+  width: 100%;         
+  height: auto;         
+  margin: 0;            
+  padding: 0;           
+  object-fit: cover;
 }
+  .container-foto{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;          
+  line-height: 0;
+}
+
+
+  .lista-topicos li {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .lista-topicos .icone {
+    font-size: 1.2rem;
+  }
+
 .assunto{
+
    padding: 20px 10px;
+}
+
+#agende{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.grid-agende{
+  grid-template-columns: 1fr;
+  padding: 20px;
+  gap: 50px;
+  padding-top: 60px;
 }
 
 .footer-conteudo {

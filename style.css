@@ -139,12 +139,6 @@ line-height: 1.5em;
 }
 
 
-#aapresentacao p{
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.1rem;
-  line-height: 1.5em;
-}
 
 
 #apresentacao a{
@@ -163,30 +157,28 @@ text-decoration: none;
 
 
 
-#profissional{
+.sobre-mim-card{
   display: flex;
 background-color:#1c3a58;
 color:white;
 line-height: 1.5em;
 justify-content: center;
 align-items: center;
-
-}
-
-#aprofissional{
-flex: 1;
-padding: 20px 30px;
- max-width: 900px;
-padding-left: 30px;
-margin: auto;
-font-size: 1.1rem;
-  line-height: 1.5em;
+text-align: center;
 }
 
 
+
+.lista-topicos p {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #475569;
+  line-height: 1.5;
+}
 
 
 #fotodaprofissional{
+  
  align-self: flex-end;
  
  }
@@ -202,7 +194,32 @@ font-size: 1.1rem;
     background-color: var(--cor3);
     display: inline-block;
     
-    
+}
+
+#link{
+  padding: 20px;
+  
+}
+
+.lista-topicos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.lista-topicos li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: white;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6; 
+  
 }
 
 .container-foto{
@@ -617,6 +634,7 @@ min-height: 500px;
 padding: 30px;
 color:#1c3a58;
 }
+
 #agende h2, p{
   text-align: center;
   padding-bottom: 10px;
@@ -777,6 +795,23 @@ li{
   margin-bottom: 0;
   padding-top: 20px;
 }
+.sobre-mim-card {
+    margin: 20px 15px;
+    padding-top: 50px;
+    flex-direction: column;
+  }
+
+  .lista-topicos li {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .lista-topicos .icone {
+    font-size: 1.2rem;
+  }
+.assunto{
+   padding: 20px 10px;
+}
 
 #profissional{
   flex-direction: column;
@@ -799,7 +834,7 @@ li{
 
 #fotodaprofissional {
     align-self:center;
-     padding-top: 20px;
+    
   }
 
 .container-foto{
@@ -873,12 +908,18 @@ li{
   height: 330px;
   width: 330px;
 }
+
+#agende{
+  text-align: center;
+  padding: 10px;
+}
 .grid-agende{
   grid-template-columns: 1fr;
-  padding: 20px;
+  padding: 10px;
   gap: 50px;
   padding-top: 60px;
 }
+
 .footer-conteudo {
     flex-direction: column;
     align-items: center;
