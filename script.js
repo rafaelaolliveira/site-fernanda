@@ -10,12 +10,8 @@ icon.classList.toggle('fa-bars');
 
 document.addEventListener('DOMContentLoaded', () => {
   const depoimentos = document.querySelectorAll('.depoimento-wrapper');
-  const btnAnterior = document.querySelector('.seta-esquerda');
-  const btnProximo = document.querySelector('.seta-direita');
-
   let indiceAtual = 0;
 
-  
   function mostrarDepoimento(indice) {
     depoimentos.forEach((depoimento, idx) => {
       depoimento.classList.remove('active');
@@ -25,21 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  
-  btnProximo.addEventListener('click', () => {
-    indiceAtual++;
-    if (indiceAtual >= depoimentos.length) {
-      indiceAtual = 0; 
-    }
-    mostrarDepoimento(indiceAtual);
+  document.querySelectorAll('.seta-direita').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      indiceAtual = (indiceAtual + 1) % depoimentos.length;
+      mostrarDepoimento(indiceAtual);
+    });
   });
 
-  
-  btnAnterior.addEventListener('click', () => {
-    indiceAtual--;
-    if (indiceAtual < 0) {
-      indiceAtual = depoimentos.length - 1; 
-    }
-    mostrarDepoimento(indiceAtual);
+  document.querySelectorAll('.seta-esquerda').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      indiceAtual = (indiceAtual - 1 + depoimentos.length) % depoimentos.length;
+      mostrarDepoimento(indiceAtual);
+    });
   });
 });

@@ -458,7 +458,9 @@ font-weight: bold ;
   position: absolute; 
   top: 60%;           
   transform: translateY(-50%);
+  z-index: 10;
 }
+
 .seta:hover {
   transform: translateY(-50%) scale(1.2);
   color: #f26812;
