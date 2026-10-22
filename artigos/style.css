@@ -94,7 +94,7 @@ main{
   
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 
 }
 article {
@@ -122,28 +122,36 @@ text-align: center;
 line-height: 1.5em;
  
 }
+h1{
+  padding-top: 50px;
+}
+
+h2{
+  line-height: 1.1em;
+ padding-top: 30px;
+}
+
 
 .titulo{
   line-height: 1.1em;
   padding-bottom: 20px;
   text-align: center;
-  color:black;
+  color:#112c46;
   max-width: 800px;
   
 }
 .maior{
   line-height: 1.1em;
   padding-top: 20px;
-  color:black;
+  color:#e1732f;
  padding-bottom: 30px;
  
  
 }
   h3{
   line-height: 1.1em;
-  line-height: 2em;
   padding-top: 30px;
-  color:#e1732f;
+  color:#1c3a58;
   padding-bottom: 10px;
   font-weight: bold;
   
@@ -155,8 +163,10 @@ line-height: 1.5em;
 }
 
 .distancia{
+  padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .info p{
   
   border-radius: 20px;
@@ -183,12 +193,12 @@ line-height: 1.5em;
 justify-content: center;
 align-items: center;
 text-align: center;
-
+border-radius: 20px;
+  overflow: hidden;
+  
 }
 
-.sobre-mim-card h1{
-  color: white;
-}
+
 
 .lista-topicos p {
   margin: 0;
@@ -199,15 +209,19 @@ text-align: center;
 
 
 .container-foto{
-    
+    display: flex;
     width: 100%;
-    height: 100%;
-    display: block;
-    flex-shrink: 0;
+    height: auto;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0;
+  margin: 0;
+  line-height: 0;
     }
 
 #fotodaprofissional{
- align-self: flex-end;
+ display: block;
+ object-fit: cover;
  
  }
 
@@ -255,7 +269,7 @@ text-align: center;
 padding: 30px;
 color:#1c3a58;
 }
-#agende h2, p{
+#agende h2, #agende p{
   text-align: center;
   padding-bottom: 10px;
 }
@@ -340,10 +354,14 @@ color:#1c3a58;
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
+     
   }
-  .gatilho-clique:hover {
-    color: #FF985A;
-  }
+ .gatilho-clique:hover{
+color: #e1732f;
+ }
+  
+
+
 
 
 
@@ -424,31 +442,79 @@ li{
 
 section {
    margin: 20px 15px;
-    padding: 20px 15px;
+    padding: 20px 15px 0 15px;;
     border-radius: 8px;
+    overflow: hidden;
   }
 
 
 .sobre-mim-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   }
 
-#fotodaprofissional{
-  display: block;       
-  width: 100%;         
-  height: auto;         
-  margin: 0;            
-  padding: 0;           
-  object-fit: cover;
-}
-  .container-foto{
+.container-foto{
+    display: flex;
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
   padding: 0;          
-  line-height: 0;
+  align-items: flex-end;
+    justify-content: center;
 }
+
+#fotodaprofissional{
+  display: block;              
+  object-fit: cover;
+  
+}
+  
+h1 {
+    font-size: 1.8rem;       
+    padding-top: 25px;       
+  }
+
+  h2 {
+    font-size: 1.5rem;      
+    padding-top: 20px;       
+    line-height: 1.2em;     
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    padding-top: 20px;      
+    padding-bottom: 8px;     
+    line-height: 1.2em;
+  
+    font-weight: bold;
+  }
+  
+.distancia {
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box; 
+  }
+
+  .titulo {
+    line-height: 1.2em;
+    padding-bottom: 15px;    
+    text-align: center;
+    width: 100%;             
+    padding-left: 15px;     
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .maior {
+    line-height: 1.2em;
+    padding-top: 15px;      
+    padding-bottom: 20px;    
+    
+  }
+
 
 
   .lista-topicos li {

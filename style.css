@@ -17,13 +17,7 @@ amarelo bem clarinho #FDFCF6
 laranja bem clarinho  #FEF6F1
 
 */
-/*
- <div class="depoimento-wrapper">
-         <h3>Luísa R</h3>
-          <p class="cargo">Programadora</p>
-          <p class="texto-depoimento"><strong>Melhor tratamento psicológico que já recebi. </strong>Me sinto muito acolhida, compreendida e sinto que há uma empatia e preocupação quando falo dos meus problemas.</p>
-      </div>
-*/
+
 :root{
   --cor0: #ffff;
   --cor1:#779ECC;
@@ -104,7 +98,9 @@ main{
  
 }
 
-
+h1{
+  padding-top: 50px;
+}
 
 .titulo{
   line-height: 1.1em;
@@ -113,7 +109,8 @@ main{
 }
 
 h2{
-  line-height: 2em;
+  line-height: 1.1em;
+ padding-top: 30px;
 }
 
 #apresentacao{
@@ -135,8 +132,8 @@ align-items: center;
 flex: 1;
 text-align: center;
 line-height: 1.5em;
-
 }
+
 
 
 
@@ -233,14 +230,12 @@ text-align: center;
 #sintomas{
 background-color: white;
 text-align: center;
-color:#1c3a58;
+color: #1c3a58;
 
 
 }
 
-#paragrafo{
-  margin-left: 10px;
-}
+
 
 .segundoparagrafo{
   padding-bottom: 30px;
@@ -248,24 +243,59 @@ color:#1c3a58;
 
  .grid-cards {
     display: grid;
-    color: #1c3a58;
+    color:#1c3a58;
+    font-weight: bold ;
    justify-items: center;
     gap: 30px; 
-    padding: 50px 20px;
-   grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+   grid-template-columns: repeat(3, 400px);
   justify-content: center;
    
   }
   .card {
-    border: 3px solid var(--cor5);
-    border-radius: 40px;
+    border: 2px solid #FF985A;
+    border-radius: 30px;
     padding: 20px;
-    max-width: 350px;
-    
+    max-width: 300px;
+    background-color: white;
     text-align: center;
   
   }
+  .card img, .quadro img {
+    display: block;
+  margin-left: auto;  
+  margin-right: auto; 
   
+ 
+
+  filter: 
+    brightness(0) 
+    saturate(100%) 
+    invert(18%) 
+    sepia(38%) 
+    saturate(1889%) 
+    hue-rotate(174deg) 
+    brightness(94%) 
+    contrast(91%)
+    drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.3));
+    
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.card:hover img, .quadro:hover img {
+  transform: translateY(-3px);
+  filter: 
+    brightness(0) 
+    saturate(100%) 
+    invert(46%) 
+    sepia(71%) 
+    saturate(1324%) 
+    hue-rotate(345deg) 
+    brightness(96%) 
+    contrast(89%)
+    drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.4));
+}
 
 #comofunciona{
   background-color:var(--cor3);
@@ -312,32 +342,28 @@ font-weight: bold ;
   text-align: center;
   color: #05322f;
   background-color: white;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .grid-quadro {
   
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-   gap: 50px;
-  justify-content: space-between;
- padding-top: 100px;
- justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+   justify-items: center;
+   padding: 40px 20px;
   }
 
-  .quadro h3{
-    text-align: center;
-    padding-bottom: 20px;
-    max-width: 550px;
-  }
+  
 
   .quadro {
-  border: 4px solid var(--cor5); 
-    border-radius: 30px;
+  border: 2px solid #FF985A; 
+    border-radius: 20px;
     text-align: center;
     color:  #05322f;
- padding-top: 30px;
-
+  box-sizing: border-box;
+    max-width: 450px;
+    padding: 40px 20px 10px 20px;
     
 }
 .depoimentoscontainer {
@@ -482,9 +508,9 @@ display: flex;
  }    
 
  .duvidas:hover{
-  
   cursor: pointer;
 }
+
 .duvidas summary::-webkit-details-marker {
   display: none;
 }
@@ -532,6 +558,7 @@ display: flex;
     transform: translateY(0);
   }
 }
+
 .perguntas {
 font-weight: bold;
 color: black;
@@ -635,10 +662,11 @@ padding: 30px;
 color:#1c3a58;
 }
 
-#agende h2, p{
+#agende h2, #agende p{
   text-align: center;
   padding-bottom: 10px;
 }
+
 #agende a{
   text-decoration: none;
 
@@ -654,16 +682,15 @@ color:#1c3a58;
 
 .grid-agende {
     display: grid;
-    
-   justify-items: center;
-     gap: 20px;
+    justify-items: center;
+    gap: 20px;
     padding: 50px 20px;
-   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-   
-  }
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    }
+
+
   .quadro-agende {
-    
     padding: 20px;
     max-width: 350px;
      border: 2px solid #ff995ad0; 
@@ -779,10 +806,34 @@ li{
     color: var(--cor5);
   }
 
+  h1 {
+    font-size: 1.8rem;       
+    padding-top: 25px;       
+  }
+
+  h2 {
+    font-size: 1.25rem;       
+    padding-top: 20px;       
+    line-height: 1.0em;   
+    text-align: center;   
+  }
+
+
   .titulo {
-    font-size: 1.875rem; 
-    line-height: 1.25;
-    padding-bottom: 25px;
+    line-height: 1.2em;
+    padding-bottom: 15px;    
+    text-align: center;
+    width: 100%;             
+    padding-left: 15px;     
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .maior {
+    line-height: 1.2em;
+    padding-top: 15px;       
+    padding-bottom: 20px;   
+    
   }
 
 #apresentacao{
@@ -863,6 +914,7 @@ li{
 
 .quadro{
   border-radius: 20px;
+  max-width: 300px;
 }
 
 #comofunciona{
@@ -913,6 +965,7 @@ li{
   text-align: center;
   padding: 10px;
 }
+
 .grid-agende{
   grid-template-columns: 1fr;
   padding: 10px;
